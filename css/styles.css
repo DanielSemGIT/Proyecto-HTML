@@ -1,0 +1,48 @@
+:root{
+    /* se crea la paleta de colores que se va ausar en la pagina*/
+    --blanco: #ffffff; 
+    --oscuro: #212121;
+    --primario: #ffc107;
+    --secundario: #0097a7;
+    --gris: #757575;
+}
+html{
+    font-size: 62.5%; /* se le pone ese tamañao para que se mas facil medir los rem*/
+}
+body{
+    font-size: 16px; /* 1rem = 10px*/
+    font-family: 'Krub', sans-serif; /*estamos seleccionando la fuente de google font en todo*/
+}
+.titulo{
+    text-align: center; /*text-align alinea el texto */
+    font-size: 3.8rem; /*especifica la dimension de la letra*/
+    color: var(--primario); /*le pone color a la letra*/
+}
+.titulo span{
+    font-size: 2rem; /*el tamaño del span*/
+}
+/*los "class" de html son reutilizables para csss. osea que si
+un h1 y h2 les pongo el mismo titulo en class los dos tendran 
+las mismas propiedades*/
+.contenedor{ /*Es contenedor en donde se mostrara la informacion*/
+    width: 120rem; /*este es el tamañao del contenedor a lo largo*/
+    margin: 0 auto;/*margenes del contenedor (centra el contenedor)*/
+}
+.nav-bg{
+    background-color: var(--secundario);/*color trasero del navegador*/
+}
+.navegacion-principal{
+    display: flex; /*no hace nada pero te da las propiedades del flex*/
+    justify-content: space-between; /*centra los nav (hay varias posibilidades)*/
+}
+.navegacion-principal a{/*el texto de los nav*/
+    color: var(--blanco);/*su color*/
+    text-decoration: none;/*le quita la line inferior de los nav*/
+    font-size: 1rem;/*tamaño de la letra*/
+    font-weight: 700;/*lo ancho de la letra (efecto negritas)*/
+    padding: 1rem;/*el grosor de los nav*/
+}
+.navegacion-principal a:hover{/*efecto cuando seleccione un nav*/
+    background-color: var(--primario);/*color que se pondra cuando se seleccione*/
+    color: var(--oscuro);/*cambiara el color de la letra a negro*/
+}
